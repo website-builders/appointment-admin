@@ -4,6 +4,8 @@ import { AngularFirestore } from '@angular/fire/firestore';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
+import { ReactiveFormsModule, FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -11,9 +13,16 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+    AnimateOnScrollModule.forRoot()
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [
+    ReactiveFormsModule,
+    FormsModule,
+  ]
 })
 export class AppModule { }
