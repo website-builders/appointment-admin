@@ -28,5 +28,13 @@
 }
 
 body {
-    font-family: 'myFontsRegular';
+    font-family: 'myFontsRegular' !important;
 }
+
+@import 'assets/scss/normalize.scss';
+@import 'assets/scss/bootstrap.min';
+@import 'assets/scss/card';
+@import 'assets/scss/mixins';
+@import 'assets/scss/buttons';
+@import 'assets/scss/margins';
+@import 'assets/scss/paddings';
