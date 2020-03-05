@@ -48,6 +48,13 @@ body {
 .opacity-5 {
     opacity: 0.5;
 }
+.pointer {
+    cursor: pointer;
+}
+.custom-control-label::before {
+    border: 1px solid #9a55ff;
+    background-color: transparent !important;
+}
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
     background-color: #9a55ff !important;
 }
