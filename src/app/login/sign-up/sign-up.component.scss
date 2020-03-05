@@ -1,10 +1,10 @@
 @import '../../../assets/scss/variables';
 .signup-page {   
-    background-image:url('/assets/images/schedule-bg.jpg') ;
+    background-image:url('/assets/images/mobile-login.jpg') ;
      background-repeat: no-repeat;
      background-size: cover;
     &__overlay {
-        background-color: rgba(0,0,0,0.3);
+        background-color: rgba(0,0,0,0.5);
         height: 100vh;
         display: flex;
         justify-content: center;
