@@ -14,8 +14,26 @@
     &__left, &__right {
         justify-content: flex-end;
     }
+    &__sub-header {
+        font-family: 'myFontsLight';
+    }
     &__form {
         color: $black;
-        width: 23rem;
+        width: 25rem;
+        padding: 1.5rem;    
+    }
+    &__forgot-sec {
+        font-family: 'myFontsLight';
+        font-size: 0.875rem;
+    } 
+    &__form-group {
+        label {
+            font-family: 'myFontsLight';
+            font-size: 0.875rem;
+        }
+        margin-bottom: 1rem;
+        .form-control {
+            padding: 0.5rem 1rem;
+        }
     }
 }

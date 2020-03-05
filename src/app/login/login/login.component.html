@@ -5,10 +5,9 @@
             </div>
             <div class="col-sm-6 d-flex login-page__right">
                 <form  [formGroup]="loginForm">
-                    <div class="login-page__form card m-r-32 animated bounceInDown">
-                        <h3 class="login-page-header text-center">
-                            Login
-                        </h3>
+                    <div class="login-page__form card m-r-32 animated bounceInDown">                        
+                          <h4 class="login-page__header">Hello! let's get started</h4>
+                          <h6 class="login-page__sub-header">Sign in to continue.</h6>
                         <div class="login-page__form-group">
                             <label> User Name</label>
                             <input type="text" class="form-control" formControlName="userName" placeholder="Enter your user name"/>
@@ -18,7 +17,23 @@
                             <input type="password" class="form-control" formControlName="password" placeholder="Enter your password"/>
                         </div>
                         <div class="m-t-28 text-center">
-                            <button type="button" (click)="login()" class="btn btn-primary">Login</button>
+                            <button type="button" (click)="login()" class="my-btn my-btn-primary w-100">Login</button>
+                        </div>
+                        <div class="row m-t-20 login-page__forgot-sec">
+                            <div class="col">                                
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="keepMeSignIn">
+                                    <label class="custom-control-label" for="keepMeSignIn">
+                                        <span class="opacity-5">Keep me signed in</span>
+                                    </label>
+                                  </div>
+                            </div>
+                            <div class="col text-right">
+                               <a href="#"> Forgot password? </a>
+                            </div>
+                        </div>
+                        <div class="text-center m-t-20">
+                            Don't have an account? <a href="#"> Create </a>
                         </div>
                     </div>
                 </form>
