@@ -117,8 +117,13 @@
               "devServerTarget": "appoinement-admin:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "appoinement-admin"
 }
