@@ -1,0 +1,19 @@
+@import '../../../assets/scss/variables';
+.header {
+    &__logout {
+        height: 25px;
+    }
+    &__profile {
+        img {
+            width: 32px;
+            height: 32px;
+            border-radius: 100%;
+        }
+    }
+}
+.nav-item {
+    cursor: pointer;
+    &:hover{
+        background-color: $primaryHover;
+    }
+}
