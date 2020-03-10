@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { StyleGuideComponent } from './style-guide/style-guide.component';
 
 
 const routes: Routes = [
@@ -10,6 +11,10 @@ const routes: Routes = [
   {
     path: 'app',
     loadChildren: () => import('./layout/layout.module').then(m => m.LayoutModule)
+  },
+  {
+    path: 'style-guide',
+    component: StyleGuideComponent
   }
 ];
 

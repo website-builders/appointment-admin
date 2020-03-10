@@ -70,8 +70,8 @@
 }
 
 .my-btn-primary {
-    background: -webkit-gradient(linear, left top, right top, from(#da8cff), to(#9a55ff));
-    background: linear-gradient(to right, #da8cff, #9a55ff);
+    background: -webkit-gradient(linear, left top, right top, from(#da8cff), to($primaryColor));
+    background: linear-gradient(to right, #da8cff, $primaryColor);
     border: 0;
     -webkit-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease; 

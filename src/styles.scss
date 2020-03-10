@@ -37,13 +37,14 @@
 @import 'assets/scss/paddings';
 @import 'assets/scss/animated';
 @import 'assets/scss/typography';
+@import "~@ng-select/ng-select/themes/default.theme.css";
 body{
     max-width: 1440px;
     margin: 0 auto;
 }
 
 .primary-color {
-    color: #9a55ff;
+    color: $primaryColor;
 }
 .white-color {
     color: #fff;
@@ -74,14 +75,14 @@ body {
     cursor: pointer;
 }
 .custom-control-label::before {
-    border: 1px solid #9a55ff;
+    border: 1px solid $primaryColor;
     background-color: transparent !important;
 }
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
-    background-color: #9a55ff !important;
+    background-color: $primaryColor !important;
 }
 a {
-    color: #9a55ff !important;
+    color: $primaryColor !important;
 }
 
 // Brand 
@@ -95,4 +96,9 @@ a {
         color: $brandSecondaryColor !important;
     }
 
+}
+.content-wrapper {
+    background: $mainBgColor;
+    min-height: 100vh;
+    padding: 1.5rem;    
 }

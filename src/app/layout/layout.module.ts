@@ -8,6 +8,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ReactiveFormsModule, FormsModule} from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
 import { LayoutWrapperComponent } from './layout-wrapper/layout-wrapper.component';
+import { FooterComponent } from './footer/footer.component';
 
 const routes: Routes = [
   {
@@ -20,7 +21,8 @@ const routes: Routes = [
   declarations: [
     HeaderComponent,
     SideNavComponent,
-    LayoutWrapperComponent
+    LayoutWrapperComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -28,6 +30,11 @@ const routes: Routes = [
     ReactiveFormsModule,
     FormsModule,
     SharedModule
+  ],
+  exports: [
+    HeaderComponent,
+    SideNavComponent,
+    FooterComponent
   ]
 })
 export class LayoutModule { }
