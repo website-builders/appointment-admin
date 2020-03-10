@@ -9,6 +9,8 @@ import { ReactiveFormsModule, FormsModule} from '@angular/forms';
 import { StyleGuideComponent } from './style-guide/style-guide.component';
 import { LayoutModule } from './layout/layout.module';
 import { SharedModule } from './shared/shared.module';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -23,7 +25,8 @@ import { SharedModule } from './shared/shared.module';
     FormsModule,
     LayoutModule,
     AnimateOnScrollModule.forRoot(),
-    SharedModule
+    SharedModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent],
