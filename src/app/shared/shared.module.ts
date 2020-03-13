@@ -6,6 +6,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ServerDownComponent } from './server-down/server-down.component';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { ReactiveFormsModule, FormsModule} from '@angular/forms';
+import {MatTabsModule} from '@angular/material/tabs';
 @NgModule({
   declarations: [
     LogoBrandComponent,
@@ -17,7 +18,8 @@ import { ReactiveFormsModule, FormsModule} from '@angular/forms';
     CommonModule,
     NgSelectModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    MatTabsModule
   ],
   exports: [
     LogoBrandComponent,
@@ -26,7 +28,8 @@ import { ReactiveFormsModule, FormsModule} from '@angular/forms';
     ServerDownComponent,
     NgSelectModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    MatTabsModule
   ]
 })
 export class SharedModule { }

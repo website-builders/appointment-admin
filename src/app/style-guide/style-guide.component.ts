@@ -12,6 +12,26 @@ export class StyleGuideComponent implements OnInit {
     'Telugu',
     'Kannada'
   ];
+  public patientsList = [
+    {
+      name: 'Jon Doe',
+      age: 22,
+      amount: 100,
+      admittedDate: '20/03/2020'
+    },
+    {
+      name: 'Herman Beck',
+      age: 23,
+      amount: 120.34,
+      admittedDate: '21/03/2020'
+    },
+    {
+      name: 'John Richards',
+      age: 43,
+      amount: 220.59,
+      admittedDate: '21/03/2020'
+    }
+  ];
   constructor() { }
 
   ngOnInit() {
